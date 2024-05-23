@@ -1,0 +1,10 @@
+services:
+  lucky_wallet:
+    container_name: lucky_wallet
+    image: lucky_wallet
+    restart: always
+    build: .
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"

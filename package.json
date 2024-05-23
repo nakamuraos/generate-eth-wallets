@@ -1,0 +1,17 @@
+{
+  "name": "lucky-wallet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "ThinhHV <thinh@thinhhv.com>",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "node main.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ethers": "^6.12.1",
+    "node-fetch": "^3.3.2",
+    "telegraf": "^4.16.3"
+  }
+}
