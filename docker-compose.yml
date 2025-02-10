@@ -4,6 +4,7 @@ services:
     image: lucky_wallet
     restart: always
     build: .
+    network_mode: bridge
     logging:
       driver: "json-file"
       options:

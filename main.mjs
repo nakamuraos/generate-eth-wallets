@@ -10,6 +10,9 @@ import { randomBytes, Wallet, Mnemonic } from "ethers";
 import fetch from "node-fetch";
 import { Telegraf } from "telegraf";
 import { message } from "telegraf/filters";
+import { setDefaultResultOrder } from "node:dns";
+
+setDefaultResultOrder("ipv6first");
 
 //========================================
 let i = 0;
@@ -192,7 +195,7 @@ const main = async () => {
           console.log(`>>> ${index + 1}/${i}`);
           console.log("=======================================");
           await run();
-          await sleep(500);
+          await sleep(800);
           i++;
         }
       })
